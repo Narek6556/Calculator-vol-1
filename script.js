@@ -77,6 +77,9 @@ class Calculator {
             case '÷':
                 result = prev / current
                 break
+            case 'xy':
+                result = Math.pow(prev, current)
+                break
             default:
                 return
         }
