@@ -85,3 +85,11 @@ body {
 .grid-container .adding-border-radius-right {
     border-bottom-right-radius: 17px;
 }
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    .grid-container {
+        min-height: 90vh;
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: minmax(90px, auto) repeat(6, 70px);
+    }
+}
